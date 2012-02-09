@@ -511,7 +511,7 @@ x3dom.registerNodeType(
         
         addField_MFFloat: function (ctx, name, def)
         {
-          this.addField(ctx, name, function() { return x3dom.fields.MFFloat.parse(value); }, new x3dom.fields.MFFloat(def));
+          this.addField(ctx, name, function(value) { return x3dom.fields.MFFloat.parse(value); }, new x3dom.fields.MFFloat(def));
         },
         
         addField_MFDouble: function (ctx, name, def)
