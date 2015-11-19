@@ -857,6 +857,15 @@ x3dom.Runtime.prototype.examine = function() {
 };
 
 /**
+ * APIFunction swipe
+ * 
+ * Switches to swipe mode
+ */
+x3dom.Runtime.prototype.swipe = function() {
+    this.canvas.doc._scene.getNavigationInfo().setType("swipe");
+};
+
+/**
  * APIFunction: turnTable
  *
  * Switches to turnTable mode
