@@ -1,5 +1,5 @@
 /*
- * X3DOM JavaScript Library
+ * X3DOM JavaScript Libraryexa
  * http://www.x3dom.org
  *
  * (C)2009 Fraunhofer IGD, Darmstadt, Germany
@@ -856,6 +856,15 @@ x3dom.Runtime.prototype.examine = function() {
     this.canvas.doc._scene.getNavigationInfo().setType("examine");
 };
 
+/**
+ * APIFunction: swipe
+ * 
+ * Switches to swipe mode
+ */
+ x3dom.Runtime.prototype.swipe = function() {
+ 	this.canvas.doc._scene.getNavigationInfo().setType("swipe");
+ };
+ 
 /**
  * APIFunction: turnTable
  *
