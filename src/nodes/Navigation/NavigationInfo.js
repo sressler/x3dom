@@ -139,7 +139,7 @@ x3dom.registerNodeType(
             this.addField_MFString(ctx, 'transitionType', ["LINEAR"]);
 
             this._validTypes = [
-                "none", "examine", "turntable",
+                "none", "examine", "swipe", "turntable",
                 "fly", "freefly", "lookat", "lookaround",
                 "walk", "game", "helicopter", "any"
             ];
@@ -205,6 +205,14 @@ x3dom.registerNodeType(
                                 this._nameSpace.doc._viewarea.initMouseState();
                                 this._nameSpace.doc._viewarea.initTurnTable(this);
                             }
+                        }
+                        break;
+                    case "swipe":
+                        if (oldType != navType) {
+                            /* something useful goes here */
+                        }
+                        else {
+                            /* something else useful here */
                         }
                         break;
                     default:
