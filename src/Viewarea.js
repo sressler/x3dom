@@ -281,6 +281,7 @@ x3dom.Viewarea.prototype.navigateTo = function(timeStamp)
 
     if (needNavAnim)
     {
+/* pretty sure that for swipe mode need to hack something here to solve navigation versus interaction mode issue */
 
         //Save picking info if available
         if( this._pickingInfo.pickObj !== null ) {
